@@ -348,6 +348,14 @@ img {
   flex-wrap: wrap;
 }
 
+.team__wrapper {
+  border-top: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .team__subtitle {
   margin-bottom: 10px;
   font-weight: 500;
@@ -401,14 +409,6 @@ img {
 .socials__link:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
-}
-
-.team-wrapper {
-  border-top: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 /* Clients */
