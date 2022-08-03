@@ -119,7 +119,7 @@ img {
   color: var(--accent-color);
 }
 
-.logo-header {
+.logo__header {
   color: var(--logo-color);
 }
 
@@ -447,7 +447,7 @@ img {
 }
 /* footer*/
 
-.logo-footer {
+.logo__footer {
   color: var(--main-white-color);
 }
 
@@ -466,7 +466,7 @@ img {
   margin-right: 70px;
 }
 
-.logo-second {
+.logo--white {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
