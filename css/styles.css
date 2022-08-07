@@ -740,7 +740,7 @@ img {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.5) rotate(1turn);
 }
-.modal-btn {
+.modal__btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -761,8 +761,8 @@ img {
   transition: fill var(--animation-hover);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
   fill: var(--accent-color);
 }
 /* Modal form */
@@ -826,7 +826,9 @@ img {
 }
 
 .form__input:focus-within,
-.form__input:hover,
+.form__input:hover {
+  border-color: var(--accent-color);
+}
 .form__message:focus-within,
 .form__message:hover {
   border-color: var(--accent-color);
@@ -853,32 +855,32 @@ img {
   margin-bottom: 30px;
 }
 
-.form__checkbox:checked + .register-icon .form__icon-uncheck {
+.form__checkbox:checked + .form__register .form__icon--uncheck {
   opacity: 0;
   transition: opacity var(--animation-hover);
 }
 
-.form__checkbox:checked + .register-icon .form-icon-check {
+.form__checkbox:checked + .form__register .form__icon-check {
   opacity: 1;
 }
 
-.form-icon-check {
+.form__icon--check {
   opacity: 0;
   transition: opacity var(--animation-hover);
 }
 
-.form-agreement-text {
+.form__text {
   line-height: 1.71;
   user-select: none;
   text-underline-position: under;
 }
 
-.form-agreement-link {
+.form__link {
   cursor: pointer;
   color: var(--accent-color);
 }
 
-.form-btn {
+.form__btn {
   width: 200px;
   font-weight: 700;
   font-size: 16px;
@@ -899,7 +901,7 @@ img {
   transition: background-color var(--animation-hover);
 }
 
-.form-btn:hover,
-.form-btn:focus {
+.form__btn:hover,
+.form__btn:focus {
   background-color: var(--btn-hover);
 }
