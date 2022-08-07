@@ -1,0 +1,54 @@
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+    color: var(--logo-color);
+}
+
+.header__mail {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--animation-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--animation-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__promo {
+  display: flex;
+  gap: 50px;
+}
+
+.header__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
