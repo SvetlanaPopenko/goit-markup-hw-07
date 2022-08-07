@@ -1,0 +1,123 @@
+.form {
+  text-align: center;
+}
+
+.form__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  width: 100%;
+  outline: transparent;
+  cursor: pointer;
+  transition: border-color var(--animation-hover);
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__message {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  width: 100%;
+  outline: transparent;
+  cursor: pointer;
+  transition: border-color var(--animation-hover);
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--title-text-color);
+  transition: fill var(--animation-hover);
+}
+
+.form__input:focus-within + .form__icon,
+.form__input:hover + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+
+.form__icon-uncheck {
+  .form__checkbox:checked + .form__register & {
+    opacity: 0;
+    transition: opacity var(--animation-hover);
+  }
+}
+
+.form__icon-check {
+  opacity: 0;
+  transition: opacity var(--animation-hover);
+  .form__checkbox:checked + .form__register & {
+    opacity: 1;
+  }
+}
+
+.form__text {
+  line-height: 1.71;
+  user-select: none;
+  text-underline-position: under;
+}
+
+.form__link {
+  cursor: pointer;
+  color: var(--accent-color);
+}
