@@ -712,7 +712,7 @@ img {
   transition: opacity var(--animation-hover), visibility var(--animation-hover);
 }
 
-.backdrop--is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -736,10 +736,11 @@ img {
   transition: transform 500ms ease-in-out 100ms, opacity 500ms ease-in-out 100ms;
 }
 
-.backdrop--is-hidden .modal {
+.backdrop.is-hidden .modal {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.5) rotate(1turn);
 }
+
 .modal__btn {
   position: absolute;
   top: 10px;
@@ -842,8 +843,8 @@ img {
   transition: fill var(--animation-hover);
 }
 
-.form__input:focus-within + .form-icon,
-.form__input:hover + .form-icon {
+.form__input:focus-within + .form__icon,
+.form__input:hover + .form__icon {
   fill: var(--accent-color);
 }
 
@@ -855,7 +856,7 @@ img {
   margin-bottom: 30px;
 }
 
-.form__checkbox:checked + .form__register .form__icon--uncheck {
+.form__checkbox:checked + .form__register .form__icon-uncheck {
   opacity: 0;
   transition: opacity var(--animation-hover);
 }
@@ -864,7 +865,7 @@ img {
   opacity: 1;
 }
 
-.form__icon--check {
+.form__icon-check {
   opacity: 0;
   transition: opacity var(--animation-hover);
 }
