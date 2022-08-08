@@ -17,10 +17,8 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+  @include fonts(14px, 16px, 500, 0.02em);
+ 
   transition: color var(--animation-hover);
   color: var(--title-text-color);
   
@@ -36,9 +34,8 @@
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--accent-color);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  @include fonts(14px, 16px, 500, 0.02em);
+  
 
   &::after {
     content: "";
