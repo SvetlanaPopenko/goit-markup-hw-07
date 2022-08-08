@@ -3,25 +3,23 @@
 }
 
 .features__list {
-    @extend %reset-list;
-    
-    display: flex;
-    gap: var(--indent);
+  @extend %reset-list;
+
+  display: flex;
+  gap: var(--indent);
 }
 
 .features__item {
-    flex-basis: 270px;
+  flex-basis: 270px;
 }
 
 .features__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    background-color: var(--third-bg-color);
-    margin-bottom: 30px;
-    border-radius: 4px;
+  @extend %flex-align;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 .features__desc {
-    line-height: 1.71;
+  @include fonts(14px, 24px);
 }
