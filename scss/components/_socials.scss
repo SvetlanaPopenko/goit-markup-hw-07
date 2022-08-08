@@ -1,18 +1,14 @@
 .socials {
   @extend %reset-list;
   
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   gap: 10px;
 }
 
 .socials__link {
   @extend %reset-link;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   width: 44px;
   height: 44px;
   color: var(--socials-color);
