@@ -12,6 +12,8 @@
 }
 
 .header__mail {
+  @extend %reset-link;
+
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -28,6 +30,8 @@
 }
 
 .header__phone {
+  @extend %reset-link; 
+  
   display: flex;
   align-items: center;
   padding-top: 32px;
