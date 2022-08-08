@@ -1,4 +1,5 @@
 .logo {
+  @extend %reset-link;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
