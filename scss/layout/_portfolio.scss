@@ -1,9 +1,7 @@
 .main__list {
   @extend %reset-list;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   gap: 8px;
 
   margin-bottom: 50px;
