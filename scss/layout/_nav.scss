@@ -4,11 +4,15 @@
   align-items: center;
 }
 .nav__list {
+  @extend %reset-list;
+
   display: flex;
   gap: 50px;
 }
 
 .nav__link {
+  @extend %reset-link;
+
   display: flex;
   align-items: center;
   padding-top: 32px;
