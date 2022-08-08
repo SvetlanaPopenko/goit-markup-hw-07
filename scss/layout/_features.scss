@@ -1,4 +1,10 @@
+.features {
+  @extend %section;
+}
+
 .features__list {
+    @extend %reset-list;
+    
     display: flex;
     gap: var(--indent);
 }
