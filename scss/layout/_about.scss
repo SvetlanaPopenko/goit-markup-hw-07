@@ -13,9 +13,7 @@
 }
 
 .about__label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-align;
     position: absolute;
     height: 70px;
     width: 100%;
