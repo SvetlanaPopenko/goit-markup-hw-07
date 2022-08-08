@@ -85,9 +85,7 @@
 }
 
 .form__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   gap: 7px;
   margin-bottom: 30px;
 }
