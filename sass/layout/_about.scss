@@ -1,0 +1,28 @@
+.about {
+    padding-bottom: 94px;
+}
+
+.about__list {
+    @extend %reset-list;
+    
+    --items: 3;
+}
+
+.about__item {
+    position: relative;
+}
+
+.about__label {
+    @extend %flex-align;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    @include fonts(14px, 16px, 700);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--main-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
