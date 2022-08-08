@@ -5,8 +5,7 @@
 .form__title {
   display: block;
   margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fonts(20px, 23px, 700);
   text-align: center;
 
   color: var(--title-text-color);
@@ -20,10 +19,7 @@
   position: relative;
   display: block;
   margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.17;
-
-  letter-spacing: 0.01em;
+  @include fonts(12px, 14px, 400, 0.01em);
 
   &:last-child {
     margin-bottom: 0;
@@ -112,7 +108,7 @@
 }
 
 .form__text {
-  line-height: 1.71;
+  @include fonts(14px, 24px);
   user-select: none;
   text-underline-position: under;
 }
