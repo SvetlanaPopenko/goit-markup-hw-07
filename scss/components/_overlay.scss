@@ -1,0 +1,30 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--overlay-bg);
+
+  transition: transform var(--animation-hover);
+
+  .main__content:hover & {
+    transform: translateY(0);
+  }
+}
+
+.overlay__text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--main-white-color);
+}
