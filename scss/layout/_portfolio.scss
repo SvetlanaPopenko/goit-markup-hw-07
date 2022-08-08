@@ -9,8 +9,8 @@
   margin-bottom: 50px;
 }
 .main__items {
-    @extend %reset-list;
-    
+  @extend %reset-list;
+
   --items: 3;
 }
 
@@ -42,13 +42,10 @@
 
 .main__service {
   color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include fonts(18px, 36px, 700, 0.06em);
   margin-bottom: 4px;
 }
 
 .main__direction {
-  font-size: 16px;
-  line-height: 1.88;
+  @include fonts(16px, 30px);
 }
