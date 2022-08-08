@@ -61,14 +61,12 @@
 }
 
 .footer__header {
-  font-size: 14px;
-  line-height: 1.14;
+  @include fonts(14px, 16px, 700);
   text-transform: uppercase;
   margin-bottom: 20px;
 
   color: var(--main-white-color);
 }
 .footer__list {
-@extend %reset-list;
+  @extend %reset-list;
 }
- 
