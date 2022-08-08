@@ -431,6 +431,9 @@ img {
 .form__input:focus-within, .form__input:hover {
   border-color: var(--accent-color);
 }
+.form__input:focus-within + .form__icon, .form__input:hover + .form__icon {
+  fill: var(--accent-color);
+}
 
 .form__message {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -459,11 +462,6 @@ img {
   fill: var(--title-text-color);
   -webkit-transition: fill var(--animation-hover);
   transition: fill var(--animation-hover);
-}
-
-.form__input:focus-within + .form__icon,
-.form__input:hover + .form__icon {
-  fill: var(--accent-color);
 }
 
 .form__agreement {
