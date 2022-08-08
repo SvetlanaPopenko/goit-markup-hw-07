@@ -19,8 +19,8 @@
     padding-right: 5px;
 }
 .team__desc {
-    font-size: 16px;
-    line-height: 1.19;
+    @include fonts(16px, 19px);
+   
     text-align: center;
     margin-bottom: 16px;
 }
