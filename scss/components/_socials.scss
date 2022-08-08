@@ -1,4 +1,6 @@
 .socials {
+  @extend %reset-list;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,6 +8,8 @@
 }
 
 .socials__link {
+  @extend %reset-link;
+
   display: flex;
   align-items: center;
   justify-content: center;
