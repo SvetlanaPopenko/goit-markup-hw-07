@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo__footer {
+  color: var(--main-white-color);
+}
+
+.logo--white {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.link--black {
+  background-color: var(--black-socials-color);
+  color: var(--main-white-color);
+
+  transition: background-color var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
