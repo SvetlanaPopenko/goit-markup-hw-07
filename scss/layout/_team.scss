@@ -1,8 +1,11 @@
 .team {
+    @extend %section;
     background-color: var(--third-bg-color);
 }
 
 .team__list {
+    @extend %reset-list;
+    
     display: flex;
     gap: var(--indent);
     flex-wrap: wrap;
