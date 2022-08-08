@@ -1,4 +1,9 @@
+.section {
+@extend %section;
+} 
 .clients {
+  @extend %reset-list;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,6 +11,8 @@
 }
 
 .clients__link {
+  @extend %reset-link;
+
   display: flex;
   align-items: center;
   justify-content: center;
