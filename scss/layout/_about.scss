@@ -3,6 +3,8 @@
 }
 
 .about__list {
+    @extend %reset-list;
+    
     --items: 3;
 }
 
