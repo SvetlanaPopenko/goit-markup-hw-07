@@ -21,6 +21,8 @@
 }
 
 .footer__link {
+  @extend %reset-link;
+
   color: var(--main-white-color);
   transition: color var(--animation-hover);
 
@@ -31,6 +33,8 @@
 }
 
 .footer__mail {
+  @extend %reset-link;
+
   color: var(--transpered-color);
   transition: color var(--animation-hover);
 
@@ -41,6 +45,8 @@
 }
 
 .footer__phone {
+  @extend %reset-link;
+
   color: var(--transpered-color);
   transition: color var(--animation-hover);
 
@@ -62,3 +68,7 @@
 
   color: var(--main-white-color);
 }
+.footer__list {
+@extend %reset-list;
+}
+ 
