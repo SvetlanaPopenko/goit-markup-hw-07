@@ -5,9 +5,7 @@
   padding-bottom: 24px;
   margin-right: 93px;
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include fonts(26px, 31px, 700);
   color: var(--accent-color);
 }
 
