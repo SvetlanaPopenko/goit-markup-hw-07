@@ -17,6 +17,7 @@
 
   transition: color var(--animation-hover),
     background-color var(--animation-hover);
+    
   &:hover,
   &:focus {
     color: var(--main-white-color);
