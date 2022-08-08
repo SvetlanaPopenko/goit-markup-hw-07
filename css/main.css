@@ -97,16 +97,6 @@ img {
   margin-bottom: 20px;
 }
 
-.link--black {
-  background-color: var(--black-socials-color);
-  color: var(--main-white-color);
-  -webkit-transition: background-color var(--animation-hover);
-  transition: background-color var(--animation-hover);
-}
-.link--black:hover, .link--black:focus {
-  background-color: var(--accent-color);
-}
-
 .hero__btn {
   display: block;
   margin: 0 auto;
@@ -354,6 +344,16 @@ img {
 
 .socials__icon {
   fill: currentColor;
+}
+
+.link--black {
+  background-color: var(--black-socials-color);
+  color: var(--main-white-color);
+  -webkit-transition: background-color var(--animation-hover);
+  transition: background-color var(--animation-hover);
+}
+.link--black:hover, .link--black:focus {
+  background-color: var(--accent-color);
 }
 
 .contact-form__wrap {
