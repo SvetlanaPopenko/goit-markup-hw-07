@@ -4,18 +4,14 @@
 .clients {
   @extend %reset-list;
   
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   gap: var(--indent);
 }
 
 .clients__link {
   @extend %reset-link;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-align;
   width: 170px;
   height: 92px;
   border: 1px solid var(--socials-color);
