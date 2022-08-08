@@ -48,6 +48,11 @@
   &:hover {
     border-color: var(--accent-color);
   }
+
+  &:focus-within + .form__icon,
+  &:hover + .form__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .form__message {
@@ -77,11 +82,6 @@
   left: 12px;
   fill: var(--title-text-color);
   transition: fill var(--animation-hover);
-}
-
-.form__input:focus-within + .form__icon,
-.form__input:hover + .form__icon {
-  fill: var(--accent-color);
 }
 
 .form__agreement {
