@@ -22,9 +22,7 @@
 
 .overlay__text {
   text-align: left;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-
+  @include fonts(18px, 28px);
+   
   color: var(--main-white-color);
 }
