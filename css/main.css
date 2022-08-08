@@ -36,6 +36,25 @@
   margin: -1px;
 }
 
+.section, .team, .features {
+  padding-top: 94px;
+  padding-right: 0;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+
+.main__content, .footer__phone, .footer__mail, .footer__link, .clients__link, .nav__link, .header__phone, .header__mail, .socials__link, .logo {
+  text-decoration: none;
+  color: currentColor;
+  line-height: 1.71;
+}
+
+.main__items, .main__list, .footer__list, .clients, .team__list, .about__list, .features__list, .nav__list, .socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
@@ -54,18 +73,6 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-  line-height: 1.71;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 
@@ -249,13 +256,6 @@ img {
 .card-set-item {
   -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
       flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
-
-.section {
-  padding-top: 94px;
-  padding-right: 0;
-  padding-bottom: 94px;
-  padding-left: 0;
 }
 
 .container {
@@ -969,9 +969,7 @@ img {
   transition: box-shadow var(--animation-hover);
   transition: box-shadow var(--animation-hover), -webkit-box-shadow var(--animation-hover);
 }
-
-.main__content:hover,
-.main__content:focus {
+.main__content:hover, .main__content:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
