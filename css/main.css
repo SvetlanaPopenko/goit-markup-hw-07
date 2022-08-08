@@ -563,7 +563,6 @@ img {
   -webkit-transition: opacity var(--animation-hover), visibility var(--animation-hover);
   transition: opacity var(--animation-hover), visibility var(--animation-hover);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
