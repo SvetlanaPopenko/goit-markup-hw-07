@@ -1,0 +1,8 @@
+@import'./decimals';
+
+@mixin fonts($fs, $lh, $fw: 400, $ls: 0.03em) {
+  font-size: $fs;
+  line-height: decimal-round($lh / $fs);
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
