@@ -47,3 +47,30 @@
 .main__direction {
   @include fonts(16px, 30px);
 }
+
+.main__button {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-style: normal;
+  @include fonts(16px, 26px, 500);
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
+  transition: color var(--animation-hover),
+    background-color var(--animation-hover), box-shadow var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
